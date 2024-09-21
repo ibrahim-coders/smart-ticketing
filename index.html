@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!-- Gogole font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Reddit+Sans+Condensed:wght@200..900&display=swap"
+    rel="stylesheet">
+  <!-- daisyui link -->
+
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- icon link -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <script>
+    // module.exports = {
+    //   theme: {
+
+    //     colors: {
+    //       primary: '#1DD100',
+    //       secondary: '#030712',
+    //       couponOne: '#f78c9c',
+    //       mobileMenu: '#f7f8f8',
+    //     },
+    //     fontFamily: {
+    //       reddit: ['"Reddit Sans Condensed"', 'system-ui'],
+    //     },
+    //   },
+    // };
+
+  </script>
+</head>
+
+<body class="font-reddit">
+
+
+  <section class="bg-white px-8 py-5 mx-auto rounded-2xl shad  grid grid-cols-3 ga-5">
+    <!-- Left Section -->
+    <div class="col-span-2 mr-10">
+
+      <div class="flex justify-between">
+        <h2 class="text-lg md:text-xl font-semibold">Select Your Seat</h2>
+        <h2 class="text-lg md:text-xl font-semibold">total seat <span id="total-seat" class="text-green-600">40</span>
+        </h2>
+      </div>
+
+      <div class="border-b-2 border-dashed my-4"></div>
+
+      <div class="flex justify-between items-center">
+        <p class="text-gray-600 flex items-center gap-2">
+          <span>Available</span><i class='bx bx-cheese'></i>
+        </p>
+        <p class="text-green-600 flex items-center gap-2">
+          <span>Available</span><i class='bx bx-cheese'></i>
+        </p>
+      </div>
+      <div class="border-b-2 border-dashed my-4"></div>
+
+      <!-- set section: seat section start -->
+
+
+      <section class="grid grid-cols-12 items-center gap-y-5 mr-6 ">
+
+        <!-- seat -->
+        <p class="col-span-1"></p>
+
+        <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center">
+          <p class="col-span-8"></p>
+          <button class="btn col-span-2"><i class='bx bx-bus text-green-600'></i></button>
+        </div>
+
+        <!-- row-1 -->
+        <p class="col-span-1">A</p>
+        <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center">
+          <button onclick="handeslSelecotSeat(this)"
+            class="col-span-2 btn btn-md hover:bg-white transition-colors dtration-200 ease-in-out">A1</button>
+          <button onclick="handeslSelecotSeat(this)"
+            class="col-span-2 btn btn-md hover:bg-white transition-colors dtration-200 ease-in-out">A2</button>
+
+          <p class="col-span-2"></p>
+          <button onclick="handeslSelecotSeat(this)"
+            class="col-span-2 btn btn-md hover:bg-white transition-colors dtration-200 ease-in-out">A3</button>
+
+          <button onclick="handeslSelecotSeat(this)"
+            class="col-span-2 btn btn-md hover:bg-white transition-colors dtration-200 ease-in-out">A4</button>
+
+        </div>
+
+        <!-- row-2 -->
+        <p class="col-span-1">B</p>
+        <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center">
+          <button onclick="handeslSelecotSeat(this)"
+            class="col-span-2 btn btn-md hover:bg-white transition-colors dtration-200 ease-in-out">B1</button>
+
+          <button onclick="handeslSelecotSeat(this)"
+            class="col-span-2 btn btn-md hover:bg-white transition-colors dtration-200 ease-in-out">B2</button>
+
+          <p class="col-span-2"></p>
+
+          <button onclick="handeslSelecotSeat(this)"
+            class="col-span-2 btn btn-md hover:bg-white transition-colors dtration-200 ease-in-out">B3</button>
+
+          <button onclick="handeslSelecotSeat(this)"
+            class="col-span-2 btn btn-md hover:bg-white transition-colors dtration-200 ease-in-out">B4</button>
+
+        </div>
+
+        <!-- row-3-->
+        <p class="col-span-1">C</p>
+        <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center">
+          <button onclick="handeslSelecotSeat(this)"
+            class="col-span-2 btn btn-md hover:bg-white transition-colors dtration-200 ease-in-out">C1</button>
+
+          <button onclick="handeslSelecotSeat(this)"
+            class="col-span-2 btn btn-md hover:bg-white transition-colors dtration-200 ease-in-out">C2</button>
+
+          <p class="col-span-2"></p>
+
+          <button onclick="handeslSelecotSeat(this)"
+            class="col-span-2 btn btn-md hover:bg-white transition-colors dtration-200 ease-in-out">C3</button>
+
+          <button onclick="handeslSelecotSeat(this)"
+            class="col-span-2 btn btn-md hover:bg-white transition-colors dtration-200 ease-in-out">C4</button>
+
+        </div>
+
+        <!-- row-4-->
+        <p class="col-span-1">D</p>
+        <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center">
+          <button onclick="handeslSelecotSeat(this)"
+            class="col-span-2 btn btn-md hover:bg-white transition-colors dtration-200 ease-in-out">D1</button>
+
+          <button onclick="handeslSelecotSeat(this)"
+            class="col-span-2 btn btn-md hover:bg-white transition-colors dtration-200 ease-in-out">D2</button>
+
+          <p class="col-span-2"></p>
+
+          <button onclick="handeslSelecotSeat(this)"
+            class="col-span-2 btn btn-md hover:bg-white transition-colors dtration-200 ease-in-out">D3</button>
+
+          <button onclick="handeslSelecotSeat(this)"
+            class="col-span-2 btn btn-md hover:bg-white transition-colors dtration-200 ease-in-out">D4</button>
+
+        </div>
+
+        <!-- row-5 -->
+        <p class="col-span-1">E</p>
+        <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center">
+          <button onclick="handeslSelecotSeat(this)"
+            class="col-span-2 btn btn-md hover:bg-white transition-colors dtration-200 ease-in-out">E1</button>
+
+          <button onclick="handeslSelecotSeat(this)"
+            class="col-span-2 btn btn-md hover:bg-white transition-colors dtration-200 ease-in-out">E2</button>
+          <p class="col-span-2"></p>
+
+          <button onclick="handeslSelecotSeat(this)"
+            class="col-span-2 btn btn-md hover:bg-white transition-colors dtration-200 ease-in-out">E3</button>
+
+          <button onclick="handeslSelecotSeat(this)"
+            class="col-span-2 btn btn-md hover:bg-white transition-colors dtration-200 ease-in-out">E4</button>
+
+        </div>
+
+        <!-- row-6 -->
+        <p class="col-span-1">F</p>
+        <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center">
+          <button onclick="handeslSelecotSeat(this)"
+            class="col-span-2 btn btn-md hover:bg-white transition-colors dtration-200 ease-in-out">F1</button>
+          <button onclick="handeslSelecotSeat(this)"
+            class="col-span-2 btn btn-md hover:bg-white transition-colors dtration-200 ease-in-out">F2</button>
+
+          <p class="col-span-2"></p>
+
+          <button onclick="handeslSelecotSeat(this)"
+            class="col-span-2 btn btn-md hover:bg-white transition-colors dtration-200 ease-in-out">F3</button>
+          <button onclick="handeslSelecotSeat(this)"
+            class="col-span-2 btn btn-md hover:bg-white transition-colors dtration-200 ease-in-out">F4</button>
+
+        </div>
+
+        <!-- row-7 -->
+        <p class="col-span-1">G</p>
+        <div " class="col-span-11 grid grid-cols-10 gap-16 items-center text-center">
+          <button 
+          onclick="handeslSelecotSeat(this)"
+          class="col-span-2 btn btn-md hover:bg-white transition-colors dtration-200 ease-in-out">G1</button>
+          <button 
+           onclick="handeslSelecotSeat(this)"
+          class="col-span-2 btn btn-md hover:bg-white transition-colors dtration-200 ease-in-out">G2</button>
+
+
+          <p class="col-span-2"></p>
+
+          <button 
+           onclick="handeslSelecotSeat(this)"
+          class="col-span-2 btn btn-md hover:bg-white transition-colors dtration-200 ease-in-out">G3</button>
+          <button 
+           onclick="handeslSelecotSeat(this)"
+          class="col-span-2 btn btn-md hover:bg-white transition-colors dtration-200 ease-in-out">G4</button>
+
+        </div>
+
+        <!-- row-8 -->
+        <p class="col-span-1">H</p>
+        <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center">
+          <button onclick="handeslSelecotSeat(this)"
+            class="col-span-2 btn btn-md hover:bg-white transition-colors dtration-200 ease-in-out">H1</button>
+          <button onclick="handeslSelecotSeat(this)"
+            class="col-span-2 btn btn-md hover:bg-white transition-colors dtration-200 ease-in-out">H2</button>
+          <p class="col-span-2"></p>
+          <button onclick="handeslSelecotSeat(this)"
+            class="col-span-2 btn btn-md hover:bg-white transition-colors dtration-200 ease-in-out">H3</button>
+          <button onclick="handeslSelecotSeat(this)"
+            class="col-span-2 btn btn-md hover:bg-white transition-colors dtration-200 ease-in-out">H4</button>
+
+        </div>
+
+        <!-- row-9-->
+        <p class="col-span-1">I</p>
+        <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center">
+          <button onclick="handeslSelecotSeat(this)"
+            class="col-span-2 btn btn-md hover:bg-white transition-colors dtration-200 ease-in-out">I1</button>
+          <button onclick="handeslSelecotSeat(this)"
+            class="col-span-2 btn btn-md hover:bg-white transition-colors dtration-200 ease-in-out">I2</button>
+          <p class="col-span-2"></p>
+          <button onclick="handeslSelecotSeat(this)"
+            class="col-span-2 btn btn-md hover:bg-white transition-colors dtration-200 ease-in-out">I3</button>
+          <button onclick="handeslSelecotSeat(this)"
+            class="col-span-2 btn btn-md hover:bg-white transition-colors dtration-200 ease-in-out">I4</button>
+
+        </div>
+
+        <!-- row-10 -->
+        <p class="col-span-1">J</p>
+        <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center">
+          <button onclick="handeslSelecotSeat(this)"
+            class="col-span-2 btn btn-md hover:bg-white transition-colors dtration-200 ease-in-out">J1</button>
+          <button onclick="handeslSelecotSeat(this)"
+            class="col-span-2 btn btn-md hover:bg-white transition-colors dtration-200 ease-in-out">J2</button>
+          <p class="col-span-2"></p>
+          <button onclick="handeslSelecotSeat(this)"
+            class="col-span-2 btn btn-md hover:bg-white transition-colors dtration-200 ease-in-out">J3</button>
+          <button onclick="handeslSelecotSeat(this)"
+            class="col-span-2 btn btn-md hover:bg-white transition-colors dtration-200 ease-in-out">J4</button>
+
+        </div>
+
+      </section>
+
+    </div>
+    <div class="">
+      <div>
+        <h2 class="text-2xl font-semiboldt text-gray-700">Select Your Seat</h2>
+        <div class="border-b-2 my-4 border-dashed"></div>
+        <section class="">
+          <div class="bg-[#f7f8f8] p-4 shadow-md rounded-xl">
+            <h3 class="flex justify-between">
+              <p class="flex"><span>Seat</span><span
+                  class="bg-green-700 w-4 h-4 p-2 text-white flex justify-center items-center font-normal rounded-md text-sm mx-1"
+                  id="total-booked">0</span>
+              </p>
+              <p>Class</p>
+              <p>Price</p>
+            </h3>
+
+            <div class="border-b-2 my-4 border-dashed"></div>
+            <ul id="select-seat">
+              <h3 id="default-text" class="text-2xl font-semibold
+   text-center text-red-600">No Seat Booked</h3>
+            </ul>
+
+            <div class="border-b-2 my-4 border-dashed"></div>
+
+            <div class="flex justify-between">
+              <p>Total Price</p>
+              <p><span>BDT:</span>
+                <span id="total-price">****</span>
+              </p>
+            </div>
+            <div class="border-b-2 my-4 border-dashed"></div>
+            <div
+              class="flex items-center gap-2 border-y-2 py-2 border-dashed text-lg font-lg font-semibold justify-between">
+              <input  id="coupon-input" type="text" disabled class="input my-5 w-full input-primary border-green-600"
+                placeholder="have coupon">
+              <button id="coupon-btn" class="bg-green-600 btn" disabled >Apply</button>
+            </div>
+
+            <div class="flex justify-between">
+              <p>Grand Total </p>
+              <p><span>BDT:</span>
+                <span id="discount-money">****</span>
+              </p>
+            </div>
+            <!-- 
+            form section -->
+
+            <div class="my-5">
+              <label class="form-control w-full my-3">
+                <div class="label">
+                  <span class="label-text text-xl font-semibold">Passenger Name*</span>
+
+                </div>
+                <input type="text" placeholder="Enter Your Name" class="input input-bordered w-full " />
+
+              </label>
+
+              <label class="form-control w-full my-3">
+                <div class="label">
+                  <span class="label-text text-xl font-semibold">Phone Number*</span>
+
+                </div>
+                <input type="number" placeholder="Enter Your Phone Number" class="input input-bordered w-full " />
+
+                <label class="form-control w-full my-3">
+                  <div class="label">
+                    <span class="label-text text-xl font-semibold">Email ID</span>
+
+                  </div>
+                  <input type="email" placeholder="Enter Your email ID" class="input input-bordered w-full " />
+
+                  <button onclick="my_modal_1.showModal()"
+                    class="w-full bg-green-300 py-4 mt-4 rounded-md text-lg text-white opacity-50 cursor-not-allowed">
+                    Next
+                  </button>
+
+
+                  <div class="flex justify-between mt-5">
+
+                    <a href=""
+                      class="underline font-semibold hover:text-green-500 transition-colors duration-200 ease-in-out">Cancellation
+                      Policy</a>
+                    <a href=""
+                      class="underline font-semibold hover:text-green-500 transition-colors duration-200 ease-in-out">Terms
+                      and Conditions</a>
+
+                  </div>
+
+
+
+                  <!-- Open the modal using ID.showModal() method -->
+                  <dialog id="my_modal_1" class="modal  rounded-lg shadow-lg p-6 w-11/12 max-w-md mx-auto">
+                    <form method="dialog" class="modal-box px-5 flex flex-col justify-center items-center space-y-5">
+                      <!-- Icon -->
+                      <i class='bx bx-comment-check text-6xl text-green-500'></i>
+
+                      <!-- Heading -->
+                      <h3 class="font-bold text-2xl text-green-500 my-2">Congratulations</h3>
+
+                      <!-- Message Content -->
+                      <div class="text-center space-y-3">
+                        <p class="font-bold">Thank you for booking our bus seats. We are working hard to find the best
+                          services and deals
+                          for you.</p>
+                        <p>Soon you will receive a confirmation email.</p>
+                      </div>
+
+                      <!-- Continue Button -->
+                      <button id="btn-continue"
+                        class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-6 rounded-md">
+                        Continue
+                      </button>
+                    </form>
+                  </dialog>
+
+            </div>
+
+
+
+          </div>
+        </section>
+      </div>
+    </div>
+
+
+
+  </section>
+
+
+
+  <script src="app.js"></script>
+</body>
+
+</html>
